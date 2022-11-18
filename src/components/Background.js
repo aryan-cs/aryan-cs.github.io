@@ -10,10 +10,17 @@ function sketch (p5) {
 	let BACKGROUND_COLOR = "#121212";
 	let PRESET_COLORS = [
 
-		"#cc9c00",
-  		"#b08b13",
-  		"#d69600",
-		"#dbb50b"
+		// rubystar
+		"#b01558",
+  		"#d10d62",
+  		"#d43379",
+		"#911149",
+
+		// ice spice
+		"#b3e5ff",
+		"#8ac1de",
+		"#74bde3",
+		"#89b2c7",
 
 	];
 
