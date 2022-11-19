@@ -1,11 +1,14 @@
-#defaultCanvas0 {
+canvas {
 
-    /* display: none; */
-
-}
-
-#defaultCanvas1 {
-
+    /* Position the canvas to cover the entire page */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     
+    /* Stop canvas from being highlighted */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 
 }

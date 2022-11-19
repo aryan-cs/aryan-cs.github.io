@@ -7,7 +7,7 @@ function sketch (p5) {
 	let MOUSING = false;
 	let ELASTICITY_ISH = 0.01;
 	let GRAVITY = 0.01;
-	let BACKGROUND_COLOR = "#121212";
+	let BACKGROUND_COLOR = getComputedStyle(document.documentElement).getPropertyValue("--background-color");
 	let PRESET_COLORS = [
 
 		// rubystar
@@ -16,11 +16,11 @@ function sketch (p5) {
   		"#d43379",
 		"#911149",
 
-		// ice spice
-		"#b3e5ff",
+		// ice
+		"#8ab9d1",
 		"#8ac1de",
 		"#74bde3",
-		"#89b2c7",
+		"#89b2c7"
 
 	];
 
@@ -77,7 +77,6 @@ function sketch (p5) {
 					seperation.add(difference);
 					seperation.mult(99);
 					seperationCount++;
-					console.log(seperation);
 	
 				}
 	
@@ -117,7 +116,7 @@ function sketch (p5) {
 		p5.createCanvas(window.innerWidth, window.innerHeight,  p5.WEBGL);
 		p5.frameRate(120);
 
-  		for (var b = 0; b < window.innerWidth / 100; b++) {
+  		for (var b = 0; b < window.innerWidth / 50; b++) {
     
     		bodies.push(new Body(p5.random(-window.innerWidth, window.innerWidth),
 								 p5.random(-window.innerHeight, window.innerHeight),
