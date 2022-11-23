@@ -1,13 +1,59 @@
+@font-face {
+
+  font-family: Poppins;
+  src: url(./fonts/Poppins.ttf);
+  
+}
+
+@font-face {
+
+  font-family: Barlow;
+  src: url(./fonts/Barlow.ttf);
+
+}
+
+:root {
+
+  --background-color: #121212;
+  --scrollbar-dimensions: 10px;
+  --translucent: rgba(255, 255, 255, 0.1);
+
+
+
+}
+
+::-webkit-scrollbar {
+
+  width: var(--scrollbar-dimensions);
+  height: var(--scrollbar-dimensions);
+
+}
+
+::-webkit-scrollbar-track {
+
+  background: var(--background-color);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+  background: var(--translucent);
+  border-radius: var(--scrollbar-dimensions);
+
+}
+
 body {
 
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow: hidden;
+  overflow-y: hidden;
+  /* overflow-x: scroll; */
+  background-color: var(--background-color);
 
 }
 
