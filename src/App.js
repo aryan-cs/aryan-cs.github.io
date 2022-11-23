@@ -10,15 +10,19 @@ export default class App extends React.Component {
 
       <div className = "App">
 
-        <Board width = "25rem"
-               height = "6rem"
-               header = "box 1"
-               text = "start here..." />
+        <div className = "Set">
 
-        <Board width = "25rem"
-               height = "25rem"
-               header = "box 2"
-               text = "start here..." />
+              <Board width = "30vh"
+                     height = "10vh"
+                     header = "box 1"
+                     text = "start here..." />
+
+              <Board width = "30vh"
+                     height = "45vh"
+                     header = "box 2"
+                     text = "start here..." />
+
+        </div>
 
         <Board width = "25rem"
                height = "35rem"

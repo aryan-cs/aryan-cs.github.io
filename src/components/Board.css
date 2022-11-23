@@ -5,8 +5,8 @@
     /* causes LOTS of lag */
     /* backdrop-filter: blur(2px); */
     border-radius: 10px;
-    padding: 1.5em;
-    margin: 0.75em;
+    padding: 4vh;
+    margin: 2vh;
 
     color: white;
     font-family: Barlow;
@@ -23,6 +23,6 @@
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: 0.025em;
-    margin-bottom: 0.5em;
+    margin-bottom: 2vh;
 
 }
