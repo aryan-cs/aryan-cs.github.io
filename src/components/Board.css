@@ -1,0 +1,28 @@
+.Board {
+
+    background-color: var(--translucent);
+    background-attachment: fixed;  
+    /* causes LOTS of lag */
+    /* backdrop-filter: blur(2px); */
+    border-radius: 10px;
+    padding: 4vh;
+    margin: 2vh;
+
+    color: white;
+    font-family: Barlow;
+    font-size: 1.25em;
+    
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.Board-Header {
+
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    margin-bottom: 2vh;
+
+}
