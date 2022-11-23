@@ -1,12 +1,21 @@
 canvas {
 
-    /* Position the canvas to cover the entire page */
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     
-    /* Stop canvas from being highlighted */
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
