@@ -7,7 +7,8 @@ function Board (props) {
 
   return (
 
-    <Tilt options = {{ scale: 1, max: 30, glare: true }} style = {{ minWidth: props.width, minHeight: props.height }}>
+    <Tilt options = {{ scale: 0.5, max: 10, glare: true }}
+          style = {{ minWidth: props.width, minHeight: props.height }}>
 
       <div className = "Board" style = {{ minWidth: props.width, minHeight: props.height }}>
 

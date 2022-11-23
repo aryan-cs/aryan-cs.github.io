@@ -31,7 +31,7 @@ function sketch (p5) {
     
 		this.pos = p5.createVector(x, y, z);
 		this.vel =  p5.createVector(0, 0, 0);	
-		this.speed = 100;
+		this.speed = 150;
 		this.angularVel =  p5.random(0.005, 0.025);
 		this.color = PRESET_COLORS[p5.floor(p5.random(0, PRESET_COLORS.length))];
 	
@@ -148,7 +148,7 @@ function sketch (p5) {
 			let pushy = p5.createVector(p5.mouseX - (window.innerWidth / 2), p5.mouseY - (window.innerHeight / 2), UNIVERSAL_Z);
 			pushy.sub(body.pos);
 			pushy.normalize();
-			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -40);
+			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -30);
 			body.vel.add(pushy);
 			
 		});

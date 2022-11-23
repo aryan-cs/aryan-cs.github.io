@@ -15,7 +15,7 @@
 :root {
 
   --background-color: #121212;
-  --scrollbar-dimensions: 10px;
+  --scrollbar-dimensions: 7px;
   --translucent: rgba(255, 255, 255, 0.1);
 
 }
@@ -49,9 +49,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   overflow-y: hidden;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
   background-color: var(--background-color);
 
 }
-
-code {}
