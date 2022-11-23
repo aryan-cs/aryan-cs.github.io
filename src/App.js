@@ -24,8 +24,8 @@ export default class App extends React.Component {
 
         </div>
 
-        <Board width = "50vh"
-               height = "68vh"
+        <Board width = "25rem"
+               height = "35rem"
                header = "box 3"
                text = "start here..." />
 
