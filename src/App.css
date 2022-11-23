@@ -14,9 +14,16 @@
 
 }
 
-.Set {
+.Vertical-Set {
 
   display: flex;
   flex-direction: column;
+
+}
+
+.Horizontal-Set {
+
+  display: flex;
+  flex-direction: row;
 
 }

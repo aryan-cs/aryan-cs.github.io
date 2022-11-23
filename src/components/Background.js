@@ -3,75 +3,6 @@ import "./Background.css";
 
 function sketch (p5) {
 
-	// let COLUMNS, ROWS;
-	// let SCALE = 50;
-	// let AMPLITUDE = 25;
-
-	// let flying = 0;
-	// let terrain = [];
-
-	// p5.setup = () => {
-	  
-	// 	p5.createCanvas(window.innerWidth, window.innerHeight, p5.WEBGL);
-	// 	// p5.frameRate(60);
-
-  	// 	COLUMNS = window.innerWidth / (0.5 * SCALE);
-  	// 	ROWS = window.innerHeight / SCALE;
-
-  	// 	for (var x = 0; x < COLUMNS; x++) {
-
-  	// 	  terrain[x] = [];
-  	// 	  for (var y = 0; y < ROWS; y++) { terrain[x][y] = 0; }
-
-  	// 	}
-
-	// }
-
-	// p5.draw = () => {
-
-	// 	flying -= 0.05;
-	// 	var deltaY = flying;
-
-	// 	for (let r = 0; r < ROWS; r++) {
-
-	// 	  	var deltaX = 0;
-
-	// 		for (let c = 0; c < COLUMNS; c++) {
-
-	// 			terrain[c][r] = p5.map(p5.noise(deltaX, deltaY), 0, 1, -AMPLITUDE, AMPLITUDE);
-	// 			deltaX += 0.2;
-
-	// 		}
-
-	// 	  	deltaY += 0.2;
-
-	// 	}
-	  
-	// 	p5.background(0);
-	// 	p5.translate(0, 100);
-	// 	p5.rotateX(p5.PI / 3);
-	// 	p5.stroke(255);
-	// 	p5.strokeWeight(1);
-	// 	p5.noFill();
-	// 	p5.translate(-window.innerWidth, -window.innerHeight / 2);
-
-	// 	for (let r = 0; r < ROWS - 1; r++) {
-
-	// 		p5.beginShape(p5.TRIANGLE_STRIP);
-
-	// 		for (let c = 0; c < COLUMNS; c++) {
-
-	// 			p5.vertex(c * SCALE, r * SCALE, terrain[c][r]);
-	// 			p5.vertex(c * SCALE, (r + 1) * SCALE, terrain[c][r + 1]);
-
-	// 		}
-
-	// 		p5.endShape();
-
-	// 	}
-
-	// }
-
 	let UNIVERSAL_Z = 0;
 	let MOUSING = false;
 	let ELASTICITY_ISH = 0.01;
@@ -100,7 +31,7 @@ function sketch (p5) {
     
 		this.pos = p5.createVector(x, y, z);
 		this.vel =  p5.createVector(0, 0, 0);	
-		this.speed = 50;
+		this.speed = 100;
 		this.angularVel =  p5.random(0.005, 0.025);
 		this.color = PRESET_COLORS[p5.floor(p5.random(0, PRESET_COLORS.length))];
 	
@@ -184,7 +115,7 @@ function sketch (p5) {
 		
 		p5.createCanvas(window.innerWidth, window.innerHeight,  p5.WEBGL);
 
-  		for (var b = 0; b < window.innerWidth / 50; b++) {
+  		for (var b = 0; b < window.innerWidth / 100; b++) {
     
     		bodies.push(new Body(p5.random(-window.innerWidth, window.innerWidth),
 								 p5.random(-window.innerHeight, window.innerHeight),

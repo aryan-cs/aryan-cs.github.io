@@ -1,18 +1,23 @@
 import './Board.css';
 import React from "react";
+import Tilt from "react-vanilla-tilt";
 
 
 function Board (props) {
 
   return (
 
-    <div className = "Board" style = {{ minWidth: props.width, minHeight: props.height }}>
+    <Tilt options = {{ scale: 1, max: 30, glare: true }} style = {{ minWidth: props.width, minHeight: props.height }}>
 
-      <div className = "Board-Header"> {props.header} </div>
+      <div className = "Board" style = {{ minWidth: props.width, minHeight: props.height }}>
 
-      {props.text}
+        <div className = "Board-Header"> {props.header} </div>
 
-    </div>
+        {props.text}
+
+      </div>
+
+    </Tilt>
 
   );
 
