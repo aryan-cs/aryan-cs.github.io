@@ -184,7 +184,7 @@ function sketch (p5) {
 		
 		p5.createCanvas(window.innerWidth, window.innerHeight,  p5.WEBGL);
 
-  		for (var b = 0; b < window.innerWidth / 100; b++) {
+  		for (var b = 0; b < window.innerWidth / 50; b++) {
     
     		bodies.push(new Body(p5.random(-window.innerWidth, window.innerWidth),
 								 p5.random(-window.innerHeight, window.innerHeight),
