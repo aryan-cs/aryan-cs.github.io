@@ -12,8 +12,8 @@ function sketch (p5) {
 
 		// rubystone red
 		"#F3037E",
-  		"#c20666",
-  		"#b01e68",
+  	"#c20666",
+  	"#b01e68",
 		"#ad055a",
 
 		// curacao blue
