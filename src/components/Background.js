@@ -32,6 +32,7 @@ function sketch (p5) {
 		this.pos = p5.createVector(x, y, z);
 		this.vel =  p5.createVector(0, 0, 0);	
 		this.speed = 150;
+		this.size = Math.min(window.innerHeight, window.innerWidth) / 75;
 		this.angularVel =  p5.random(0.005, 0.025);
 		this.color = PRESET_COLORS[p5.floor(p5.random(0, PRESET_COLORS.length))];
 	
@@ -103,7 +104,7 @@ function sketch (p5) {
 		p5.noFill();
 		p5.stroke(this.color);
 		p5.strokeWeight(2);
-		p5.box(10);
+		p5.box(this.size);
 	
 		p5.pop();
 	

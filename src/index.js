@@ -9,7 +9,7 @@ root.render(
 
   <React.StrictMode>
 
-    <Background />
+    {/* <Background /> */}
     <App />
     
   </React.StrictMode>
