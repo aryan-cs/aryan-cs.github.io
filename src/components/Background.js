@@ -11,16 +11,16 @@ function sketch (p5) {
 	let PRESET_COLORS = [
 
 		// rubystar
-		"#b01558",
-  		"#d10d62",
-  		"#d43379",
-		"#911149",
+		"#F3037E",
+  		"#c20666",
+  		"#b01e68",
+		"#ad055a",
 
 		// ice
-		"#8ab9d1",
-		"#8ac1de",
-		"#74bde3",
-		"#89b2c7"
+		"#00B8EE",
+		"#1b9cc2",
+		"#067ea1",
+		"#1198bf"
 
 	];
 
