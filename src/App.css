@@ -13,16 +13,23 @@
 
 }
 
-.Vertical-Set {
+.Vertical-Set { display: flex; flex-direction: column; }
+.Horizontal-Set { display: flex; flex-direction: row; }
 
-  display: flex;
-  flex-direction: column;
+span {
+
+  font-weight: 600;
+  color: var(--color-1);
+  font-size: 110%;
+  letter-spacing: 0.01em;
 
 }
 
-.Horizontal-Set {
+small {
 
-  display: flex;
-  flex-direction: row;
+  font-weight: 600;
+  color: var(--color-2);
+  font-size: 110%;
+  letter-spacing: 0.01em;
 
 }

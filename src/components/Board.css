@@ -17,22 +17,23 @@
     height: fit-content;
     width: fit-content;
 
+    cursor: context-menu;
+    transform: translateZ(20px)
+
 }
 
 .Board-Header {
 
     font-family: Poppins;
-    font-size: 5vh;
+    font-size: 3.5vh;
     font-weight: 600;
     letter-spacing: 0.025em;
     margin-bottom: 2vh;
+    text-shadow: 0 0 20px black;
+    transform: translateZ(20px);
 
     transition: 0.5s ease-in-out;
 
 }
 
-.Board:hover .Board-Header {
-
-    font-size: 6vh;
-
-}
+.Board:hover .Board-Header { font-size: 4vh; }
