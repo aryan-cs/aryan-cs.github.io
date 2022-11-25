@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
 
   font-family: Poppins;
@@ -14,10 +18,10 @@
 
 :root {
 
-  --background-color: #121212;
+  --background-color: #0e0e0e;
   --scrollbar-dimensions: 7px;
-  --translucent: rgba(255, 255, 255, 0.1);
-  --color-1: #F3037E; /* porsche's rubystar red */
+  --translucent: rgba(255, 255, 255, 0.075);
+  --color-1: #ff146e; /* porsche's rubystar red */
   --color-2: #00B8EE; /* mclaren's curacao blue */
 
 }
@@ -52,6 +56,24 @@ body {
 
   overflow-y: hidden;
   overflow-x: scroll;
+  overscroll-behavior-inline: contain;
   background-color: var(--background-color);
+
+}
+
+.Fancy-Border {
+
+  background: linear-gradient(rgb(45, 45, 45), rgb(45, 45, 45)) padding-box,
+              linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff) border-box;
+
+  border: 4px solid transparent;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.Fancy-Border:hover:enabled {
+
+  scale: 1.1;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
 
 }

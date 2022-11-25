@@ -12,8 +12,8 @@ function sketch (p5) {
 
 		// rubystone red
 		"#F3037E",
-  	"#c20666",
-  	"#b01e68",
+  		"#c20666",
+  		"#b01e68",
 		"#ad055a",
 
 		// curacao blue
@@ -149,7 +149,7 @@ function sketch (p5) {
 			let pushy = p5.createVector(p5.mouseX - (window.innerWidth / 2), p5.mouseY - (window.innerHeight / 2), UNIVERSAL_Z);
 			pushy.sub(body.pos);
 			pushy.normalize();
-			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -30);
+			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -15);
 			body.vel.add(pushy);
 			
 		});
