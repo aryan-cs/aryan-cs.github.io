@@ -2,6 +2,25 @@ import React from "react";
 import "./App.css";
 import Board from "./components/Board";
 import ContactBoard from "./components/ContactBoard";
+import {
+       
+       SiTailwindcss,
+       SiBootstrap,
+       SiPython,
+       SiJava,
+       SiCplusplus,
+       SiFirebase,
+       SiReact,
+       SiNodedotjs,
+       SiGit,
+       SiAmazonaws,
+       SiTensorflow
+
+} from "react-icons/si";
+
+import { IoLogoJavascript } from "react-icons/io";
+import { DiSqllite } from "react-icons/di";
+import { TbCSharp } from "react-icons/tb";
 
 export default class App extends React.Component {
 
@@ -34,7 +53,7 @@ export default class App extends React.Component {
               
                         <Board width = "40vh"
                                height = "76vh"
-                               header = "Interests"
+                               header = "About Me"
                                text = {<>
                                
                                    Hi there! My name is <span>Aryan</span>, and I'm currently a junior at James B. Conant 
@@ -67,8 +86,8 @@ export default class App extends React.Component {
                                           Varsity <small>cross country </small> & <span>track</span> runner, <br />
                                           Instructor for Conant's <small>CompSciKids</small>, <br />
                                           Teacher at <span>Mathnasium</span>, <br />
-                                          <small>3rd Degree</small> Black Belt Holder, <br />
-                                          & <span>Math and Science Tutor</span>. <br />
+                                          <small>3rd degree</small> black belt holder, <br />
+                                          and <span>Math & Science Tutor</span>. <br />
 
                                           </>} />
                         
@@ -93,8 +112,34 @@ export default class App extends React.Component {
               
                         <Board width = "72vh"
                                height = "33vh"
-                               header = "box 6"
-                               text = "start here..." />
+                               header = "I've worked with..."
+                               text = {<div className = "Skills">
+
+                                   <div className = "Row">
+
+                                          <IoLogoJavascript className = "Fancy-Border" />
+                                          <SiReact className = "Fancy-Border" />
+                                          <SiPython className = "Fancy-Border" />
+                                          <SiTensorflow className = "Fancy-Border" />
+                                          <SiJava className = "Fancy-Border" />
+                                          <TbCSharp className = "Fancy-Border" />
+                                          <SiCplusplus className = "Fancy-Border" />
+
+                                   </div>
+                                   
+                                          <div className = "Row">
+                                          
+                                          <SiFirebase className = "Fancy-Border" />
+                                          <DiSqllite className = "Fancy-Border" />
+                                          <SiTailwindcss className = "Fancy-Border" />
+                                          <SiNodedotjs className = "Fancy-Border" />
+                                          <SiGit className = "Fancy-Border" />
+                                          <SiAmazonaws className = "Fancy-Border" />
+                                          <SiBootstrap className = "Fancy-Border" />
+                                   
+                                   </div>
+                                   
+                                   </div>} />
        
                  </div>
 

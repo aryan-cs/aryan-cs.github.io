@@ -10,7 +10,9 @@ function Board (props) {
     <Tilt options = {{ scale: 0.5, max: 1, glare: true, "max-glare": 1 }}
           style = {{ minWidth: props.width, minHeight: props.height }}>
 
-      <div className = "Board" style = {{ minWidth: props.width, minHeight: props.height, transform: "perspective(1000px)", transformStyle: "preserve-3d" }}>
+      <div className = "Board"
+           style = {{ minWidth: props.width, minHeight: props.height, transform: "perspective(1000px)", transformStyle: "preserve-3d" }}
+           id = {props.id}>
 
         <div className = "Board-Header"> {props.header} </div>
 
