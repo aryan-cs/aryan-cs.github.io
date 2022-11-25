@@ -10,13 +10,13 @@ function sketch (p5) {
 	let BACKGROUND_COLOR = getComputedStyle(document.documentElement).getPropertyValue("--background-color");
 	let PRESET_COLORS = [
 
-		// rubystar
+		// rubystone red
 		"#F3037E",
-  		"#c20666",
-  		"#b01e68",
+  	"#c20666",
+  	"#b01e68",
 		"#ad055a",
 
-		// ice
+		// curacao blue
 		"#00B8EE",
 		"#1b9cc2",
 		"#067ea1",
