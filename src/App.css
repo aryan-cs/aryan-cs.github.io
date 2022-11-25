@@ -12,6 +12,7 @@
 
   overflow: hidden;
   overscroll-behavior-inline: contain;
+  padding-right: 100vw;
 
 }
 
