@@ -41,3 +41,48 @@
     text-shadow: 0 0 10px black;
 
 }
+
+.Row {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75vh;
+    margin-top: 0.75vh;
+    transform: translateZ(20px);
+    width: 100%;
+
+}
+
+.Skills {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    transform: translateZ(20px);
+
+}
+
+.Skills svg {
+
+    font-size: 7vh;
+    margin: 0.5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    padding: 1vh;
+    border-radius: 50%;
+
+}
+
+.Skills svg:hover {
+
+    scale: 1.2;
+    transform: translateZ(20px);
+    cursor: pointer;
+
+}
