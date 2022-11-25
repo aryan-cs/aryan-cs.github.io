@@ -14,6 +14,8 @@ function Board (props) {
 
         <div className = "Board-Header"> {props.header} </div>
 
+        <br />
+        
         {props.text}
 
       </div>
