@@ -10,17 +10,17 @@ function sketch (p5) {
 	let BACKGROUND_COLOR = getComputedStyle(document.documentElement).getPropertyValue("--background-color");
 	let PRESET_COLORS = [
 
-		// rubystar
-		"#b01558",
-  		"#d10d62",
-  		"#d43379",
-		"#911149",
+		// rubystone red
+		"#F3037E",
+  		"#c20666",
+  		"#b01e68",
+		"#ad055a",
 
-		// ice
-		"#8ab9d1",
-		"#8ac1de",
-		"#74bde3",
-		"#89b2c7"
+		// curacao blue
+		"#00B8EE",
+		"#1b9cc2",
+		"#067ea1",
+		"#1198bf"
 
 	];
 
@@ -149,7 +149,7 @@ function sketch (p5) {
 			let pushy = p5.createVector(p5.mouseX - (window.innerWidth / 2), p5.mouseY - (window.innerHeight / 2), UNIVERSAL_Z);
 			pushy.sub(body.pos);
 			pushy.normalize();
-			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -30);
+			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -15);
 			body.vel.add(pushy);
 			
 		});

@@ -10,15 +10,14 @@
     border-left: 2px solid var(--translucent);
     box-shadow: 0 0 5px 1px rgb(6, 6, 6);
 
-    color: white;
+    color: rgb(218, 218, 218);
     font-family: Barlow;
-    font-size: 1.25em;
-    
-    height: fit-content;
-    width: fit-content;
+    font-size: 1.2em;
 
     cursor: context-menu;
-    transform: translateZ(20px)
+    transform: translateZ(20px);
+
+    line-height: 180%;
 
 }
 
@@ -27,13 +26,18 @@
     font-family: Poppins;
     font-size: 3.5vh;
     font-weight: 600;
-    letter-spacing: 0.025em;
     margin-bottom: 2vh;
-    text-shadow: 0 0 20px black;
     transform: translateZ(20px);
-
+    width: auto;
+    display: inline-block;
     transition: 0.5s ease-in-out;
 
 }
 
-.Board:hover .Board-Header { font-size: 4vh; }
+.Board:hover .Board-Header {
+    
+    font-size: 3.75vh;
+    transform: translateZ(20px);
+    text-shadow: 0 0 10px black;
+
+}
