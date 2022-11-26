@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Board from "./components/Board";
 import ContactBoard from "./components/ContactBoard";
+import Project from "./components/Project";
 import {
        
        SiTailwindcss,
@@ -38,7 +39,8 @@ export default class App extends React.Component {
                  <div className = "Vertical-Set">
               
                      <Board width = "32.5vh"
-                            height = "10vh"
+                            height = "18vh"
+                            id = "welcome"
                             header = "Welcome!"
                             text = { <> My name is <small>Aryan Gupta</small> 🍌 </> } />
 
@@ -49,7 +51,7 @@ export default class App extends React.Component {
                  <div className = "Vertical-Set">
               
                         <Board width = "40vh"
-                               height = "75vh"
+                               height = "76vh"
                                header = "About Me"
                                text = {<>
                                
@@ -67,10 +69,6 @@ export default class App extends React.Component {
                                    I'm also interested in <small>quantum computing</small>, and its applications in
                                    <span> cryptography</span> & <small>quantum physics</small>.
 
-                                   <br/><br/>
-
-                                   I'm currently working on a <small>self-driving car algorithm</small> for a research project.
-
                                </>} />
        
                  </div>
@@ -79,8 +77,8 @@ export default class App extends React.Component {
                         
                         <div className = "Horizontal-Set">
               
-                               <Board width = "38vh"
-                                      height = "90%"
+                               <Board width = "39vh"
+                                      height = "32vh"
                                       header = "I'm a..."
                                       text = {<>
                                       
@@ -93,7 +91,7 @@ export default class App extends React.Component {
                                           </>} />
                         
                                <Board width = "34vh"
-                                      height = "90%"
+                                      height = "32vh"
                                       header = "I also like..."
                                       text = {<>
 
@@ -108,7 +106,8 @@ export default class App extends React.Component {
                         </div>
               
                         <Board width = "90%"
-                               height = "42vh"
+                               height = "40vh"
+                               id = "skills"
                                header = "I've worked with..."
                                text = {<div className = "Skills">
 
@@ -142,25 +141,6 @@ export default class App extends React.Component {
                  </div>
 
                  <div className = "Horizontal-Set">
-                        
-                        {/* <div className = "Vertical-Set">
-              
-                               <Board width = "30vh"
-                                      height = "22.8vh"
-                                      header = "box 7"
-                                      text = "start here..." />
-                        
-                               <Board width = "30vh"
-                                      height = "22.8vh"
-                                      header = "box 8"
-                                      text = "start here..." />
-
-                               <Board width = "30vh"
-                                      height = "22.8vh"
-                                      header = "box 9"
-                                      text = "start here..." />
-       
-                        </div> */}
 
                         <div className = "Timeline">
                             
@@ -176,7 +156,7 @@ export default class App extends React.Component {
 
                                    <div className = "Event">2021, Started working on <br />planes & cars</div>
 
-                                   <div className = "Event">2021, Intern at Graaphene</div>
+                                   <a href = "https://www.graaphene.com/" target = "_blank" rel = "noreferrer" className = "Event">2021, Intern at<br /><span>Graaphene</span><BiLink /></a>
 
                                    <a href = "https://runforwater5k.org" target = "_blank" rel = "noreferrer" className = "Event">2022, Co-founded the<br /><span>Run For Water 5K</span><BiLink /></a>
 
@@ -186,13 +166,91 @@ export default class App extends React.Component {
 
                         </div>
               
-                        <Board width = "30vh"
-                               height = "76vh"
-                               header = "box 10"
-                               text = "start here..." />
+                        <div className = "Projects">
+
+                            <div className = "Row">
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Run For Water 5K Website"
+                                            repo = "https://github.com/aryan-cs/run-for-water-5k"
+                                            src = "https://runforwater5k.org"
+                                            desc = "A website for the 5K event I helped organize!"/>
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Uno-Dos"
+                                            repo = "https://github.com/aryan-cs/uno-dos"
+                                            src = "https://aryan-cs.github.io/uno-dos/"
+                                            desc = "An interactive handwritten digit detection AI!"/>
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Sudoku Solver"
+                                            repo = "https://github.com/aryan-cs/sudoku"
+                                            src = "https://aryan-cs.github.io/sudoku/"
+                                            desc = "Entropy-based vs. brute force solving methods for sudoku"/>
+
+                            </div>
+
+                            <div className = "Row">
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Travelling Salesman Visualizer"
+                                            repo = "https://github.com/aryan-cs/travelling-salesman"
+                                            src = "https://aryan-cs.github.io/travelling-salesman/"
+                                            desc = "A travelling salesman algorithm I used in my Quantum Computing lecture!"/>
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Maze Pathfinder"
+                                            repo = "https://github.com/aryan-cs/maze"
+                                            src = "https://aryan-cs.github.io/maze/"
+                                            desc = "A maze generator & depth-first-search solver"/>
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Rube Goldberg Machine"
+                                            repo = "https://github.com/aryan-cs/my-goldberg"
+                                            src = "https://aryan-cs.github.io/my-goldberg/"
+                                            desc = "A physics-based Rube Goldberg machine using Matter.js!"/>
+
+                            </div>
+
+                            <div className = "Row">
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Chess AI"
+                                            id = "noSite"
+                                            repo = "https://github.com/aryan-cs/chess-cracker"
+                                            src = "https://aryan-cs.github.io/chess-cracker/"
+                                            desc = "Work In Progress: Chess algorithm using the Minimax Algorithm & Alpha-Beta pruning"/>
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "Chrome Dino AI"
+                                            id = "noSite"
+                                            repo = "https://github.com/aryan-cs/chrome-dino"
+                                            src = "https://aryan-cs.github.io/chrome-dino/"
+                                            desc = "My First AI project! A handmade AI system that generates pseudo-random numbers & learns the perfect jumping range based on dino speed & distance"/>
+
+                                   <Project width = "30vh"
+                                            height = "20vh"
+                                            title = "White Point"
+                                            repo = "https://github.com/aryan-cs/white-point"
+                                            src = "https://aryan-cs.github.io/white-point/"
+                                            desc = "My first web game!"/>
+
+                            </div>
+
+                            
+                            
+                        </div>
        
                  </div>
-              
+
                  </div>
 
               );

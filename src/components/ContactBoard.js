@@ -9,10 +9,10 @@ function Board (props) {
   return (
 
     <Tilt options = {{ scale: 0.5, max: 1, glare: true }}
-          style = {{ minWidth: "32.5vh", minHeight: "54.5vh" }}>
+          style = {{ minWidth: "32.5vh", minHeight: "54vh" }}>
                             
-        <div className = "Board"
-             style = {{ minWidth: "32.5vh", minHeight: "54.5vh", padding: "0" }}>
+        <div className = "Board Contact-Board"
+             style = {{ minWidth: "32.5vh", minHeight: "54vh", padding: "0" }}>
 
             <div className = "Board-Header"
                  style = {{ margin: "4vh" }}>
