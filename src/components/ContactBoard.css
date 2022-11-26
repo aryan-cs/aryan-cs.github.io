@@ -20,10 +20,10 @@ img {
 .Hoverable-Image:hover {
 
   scale: 1.1;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
   border-radius: 30px;
   cursor: pointer;
-
+  box-shadow: 7px 7px 30px 1px #00b6eea4, -7px -7px 30px 1px #ff146e9e;
+  
 }
 
 .Links-Tray {
