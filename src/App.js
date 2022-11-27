@@ -83,7 +83,7 @@ export default class App extends React.Component {
                                       text = {<>
                                       
                                           Varsity <small>cross country </small> & <span>track</span> runner, <br />
-                                          Instructor for Conant's <small>CompSciKids</small>, <br />
+                                          Instructor at Conant's <small>CompSciKids</small>, <br />
                                           Teacher at <span>Mathnasium</span>, <br />
                                           <small>3rd degree</small> black belt holder, <br />
                                           and <span>Math & Science Tutor</span>. <br />
@@ -182,8 +182,9 @@ export default class App extends React.Component {
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Uno-Dos"
+                                            id = "noSite"
                                             repo = "https://github.com/aryan-cs/uno-dos"
-                                            src = "https://aryan-cs.github.io/uno-dos/"
+                                            src = ""
                                             desc = "An interactive handwritten digit detection AI!"/>
 
                                    <Project width = "30vh"
