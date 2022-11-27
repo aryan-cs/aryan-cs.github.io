@@ -8,7 +8,7 @@ function Project (props) {
 
     <div className = "Project"
          id = {props.id}
-         onClick = {()=> { window.open(props.src, "_blank") }}>
+         onClick = {()=> { if (props.id !== "noSite") { window.open(props.src, "_blank") }}}>
 
       <iframe className = "Project-iframe"
              src = { props.src }
