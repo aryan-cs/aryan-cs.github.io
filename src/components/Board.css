@@ -13,11 +13,34 @@
   
   color: rgb(218, 218, 218);
   font-family: Barlow;
-  font-size: 1.2em;
+  font-size: 2vh;
   cursor: context-menu;
   transform: translateZ(20px);
   line-height: 180%;
+  transition: 0.4s ease-in-out;
 
+}
+
+@media screen and (max-width: 1000px) {
+
+  .Board {
+
+    padding: 3vh;
+    margin: 1vh;
+
+  }
+
+  #welcome {
+
+    height: 19vh;
+    font-size: 120%;
+
+  }
+
+  .Contact-Board { margin-top: 4vh; height: 55vh; }
+
+  #skills { height: 42vh; }
+  
 }
 
 .Board-Header {
@@ -41,18 +64,21 @@
 
 }
 
+.Board:hover { scale: 1.1; }
+
 .Row {
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.75vh;
-  margin-top: 4vh;
   transform: translateZ(20px);
   width: 100%;
+  margin-top: 1vh;
 
 }
+
+.Skill { text-align: center; font-size: 1.8vh; }
 
 .Skills {
 
@@ -184,50 +210,5 @@
 
   scale: 1.05;
   cursor: pointer;
-
-}
-
-.Row {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.75vh;
-    margin-top: 0.75vh;
-    transform: translateZ(20px);
-    width: 100%;
-
-}
-
-.Skills {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    transform: translateZ(20px);
-
-}
-
-.Skills svg {
-
-    font-size: 7vh;
-    margin: 0.5vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    transition: 0.3s ease-in-out;
-    padding: 1vh;
-    border-radius: 50%;
-
-}
-
-.Skills svg:hover {
-
-    scale: 1.2;
-    transform: translateZ(20px);
-    cursor: pointer;
 
 }
