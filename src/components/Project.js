@@ -13,6 +13,7 @@ function Project (props) {
       <iframe className = "Project-iframe"
              src = { props.src }
              title = { props.title }
+             loading = "lazy"
              scrolling = "no" />
 
       <div className = "Project-description">
