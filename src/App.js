@@ -55,18 +55,18 @@ export default class App extends React.Component {
                                header = "About Me"
                                text = {<>
                                
-                                   Hi there! My name is <span>Aryan</span>, and I'm currently a junior at James B. Conant 
+                                   &#8195;Hi there! My name is <span>Aryan</span>, and I'm currently a junior at James B. Conant 
                                    High school interested in computer science & physics. I'm a self-taught programmer, and I'm
                                    currently learning <small>C#</small> and <span>C++</span>.
                                    
                                    <br/><br/>
                                    
-                                   I'm interested in <small>AI/ML</small> & <span>computer vision</span>, and their 
+                                   &#8195;I'm interested in <small>AI/ML</small> & <span>computer vision</span>, and their 
                                    applications in future <small>automative</small> & <span>aeronautical technology</span>.                                   
                                    
                                    <br/><br/>
                                    
-                                   I'm also interested in <small>quantum computing</small>, and its applications in
+                                   &#8195;I'm also interested in <small>quantum computing</small>, and its applications in
                                    <span> cryptography</span> & <small>quantum physics</small>.
 
                                </>} />
@@ -140,7 +140,8 @@ export default class App extends React.Component {
        
                  </div>
 
-                 <div className = "Horizontal-Set">
+                 <div className = "Horizontal-Set"
+                      style = {{ width: "163vh" }}>
 
                         <div className = "Timeline">
                             
@@ -156,9 +157,15 @@ export default class App extends React.Component {
 
                                    <div className = "Event">2021, Started working on <br />planes & cars</div>
 
-                                   <a href = "https://www.graaphene.com/" target = "_blank" rel = "noreferrer" className = "Event">2021, Intern at<br /><span>Graaphene</span><BiLink /></a>
+                                   <a href = "https://www.graaphene.com/"
+                                      target = "_blank"
+                                      rel = "noreferrer"
+                                      className = "Event">2021, Intern at<br /><span>Graaphene</span><BiLink /></a>
 
-                                   <a href = "https://runforwater5k.org" target = "_blank" rel = "noreferrer" className = "Event">2022, Co-founded the<br /><span>Run For Water 5K</span><BiLink /></a>
+                                   <a href = "https://runforwater5k.org"
+                                      target = "_blank"
+                                      rel = "noreferrer"
+                                      className = "Event">2022, Co-founded the<br /><span>Run For Water 5K</span><BiLink /></a>
 
                                    <div className = "Event">2022, Conant's XC team<br />qualified for state</div>
 
@@ -244,11 +251,36 @@ export default class App extends React.Component {
                                             desc = "My first web game!"/>
                             </div> */}
 
-                            
-                            
-                        </div>
-       
+                     </div>
+                     
                  </div>
+
+                 <div className = "Horizontal-Set">
+
+                     <Board width = "43vh"
+                            height = "76vh"
+                            id = "background"
+                            header = {<>Learn about<br />this background!</>}
+                            text = {<>
+                            
+                            &#8195;This is a 3D background made using <small>p5.js</small> & implemented via <span>react-p5-wrapper</span>.
+                            It was originally inspired by <small>Craig Reynold's Boids algorithm</small>, but I made
+                            it my own by adding a few features.
+                            <br />
+                            &#8195;I render cubes in a 3D space, and then apply a few rules to them. The cubes
+                            are attracted to the mouse, and repelled from each other. Each cube has a velocity,
+                            and the velocity is updated based on the rules through <span>linear interpolation</span>.
+                            <br />
+                            &#8195;When you click on the mouse, a velocity facing opposite to the mouse from the cube
+                            is applied to each cube. Keep scrolling for some empty space to see it in action.
+                            <br /><br />
+                            Thank you for visiting my site, good bye!
+                            
+                            </>}/>   
+
+                 </div>
+
+                     
 
                  </div>
 

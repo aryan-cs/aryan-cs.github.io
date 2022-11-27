@@ -2,6 +2,7 @@
 
     scale: 0.25;
     transform: translate(-150%, -100%);
+    margin-left: 6vh;
 
 }
 
@@ -29,7 +30,7 @@
     margin-bottom: 5vh;
     cursor: pointer;
 
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 
 }
 
