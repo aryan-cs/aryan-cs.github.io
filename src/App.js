@@ -221,7 +221,6 @@ export default class App extends React.Component {
                             </div>
 
                             {/* <div className = "Row">
-
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Chess AI"
@@ -229,7 +228,6 @@ export default class App extends React.Component {
                                             repo = "https://github.com/aryan-cs/chess-cracker"
                                             src = "https://aryan-cs.github.io/chess-cracker/"
                                             desc = "Work In Progress: Chess algorithm using the Minimax Algorithm & Alpha-Beta pruning"/>
-
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Chrome Dino AI"
@@ -237,14 +235,12 @@ export default class App extends React.Component {
                                             repo = "https://github.com/aryan-cs/chrome-dino"
                                             src = "https://aryan-cs.github.io/chrome-dino/"
                                             desc = "My First AI project! A handmade AI system that generates pseudo-random numbers & learns the perfect jumping range based on dino speed & distance"/>
-
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "White Point"
                                             repo = "https://github.com/aryan-cs/white-point"
                                             src = "https://aryan-cs.github.io/white-point/"
                                             desc = "My first web game!"/>
-
                             </div> */}
 
                             
