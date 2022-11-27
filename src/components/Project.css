@@ -29,20 +29,21 @@
     margin-bottom: 5vh;
     cursor: pointer;
 
+    transition: 0.3s ease-in-out;
+
+}
+
+.Project:not(#noSite) {
+
     background: linear-gradient(rgb(45, 45, 45), rgb(45, 45, 45)) padding-box,
               linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff) border-box;
 
     border: 20px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease-in-out;
 
 }
 
-.Project:hover {
-
-    scale: 1.05;
-
-}
+.Project:hover { scale: 1.05; }
 
 .Project-description {
 
@@ -51,11 +52,11 @@
     left: 0;
     width: 197vh;
     height: 100vh;
-    padding: 10vh;
+    padding: 18vh;
     background-color: rgba(14, 14, 14, 0.75);
     opacity: 0;
     z-index: 2;
-    border-radius: 5vh;
+    border-radius: 7vh;
     display: flex;
     flex-direction: column;
     align-items: center;
