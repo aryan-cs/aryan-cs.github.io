@@ -113,26 +113,26 @@ export default class App extends React.Component {
 
                                    <div className = "Row">
 
-                                          <IoLogoJavascript className = "Fancy-Border" />
-                                          <SiReact className = "Fancy-Border" />
-                                          <SiPython className = "Fancy-Border" />
-                                          <SiJava className = "Fancy-Border" />
-                                          <TbCSharp className = "Fancy-Border" />
-                                          <SiCplusplus className = "Fancy-Border" />
-                                          <SiTensorflow className = "Fancy-Border" />
+                                          <div className = "Skill"> <IoLogoJavascript className = "Fancy-Border" /> Javascript </div>
+                                          <div className = "Skill"> <SiReact className = "Fancy-Border" /> React </div>
+                                          <div className = "Skill"> <SiPython className = "Fancy-Border" /> Python </div>
+                                          <div className = "Skill"> <SiJava className = "Fancy-Border" /> Java </div>
+                                          <div className = "Skill"> <TbCSharp className = "Fancy-Border" /> C# </div>
+                                          <div className = "Skill"> <SiCplusplus className = "Fancy-Border" /> C++ </div>
+                                          <div className = "Skill"> <SiTensorflow className = "Fancy-Border" /> Tensorflow</div>
                                           
 
                                    </div>
                                    
                                           <div className = "Row">
                                           
-                                          <SiAmazonaws className = "Fancy-Border" />
-                                          <SiNodedotjs className = "Fancy-Border" />
-                                          <SiFirebase className = "Fancy-Border" />
-                                          <DiSqllite className = "Fancy-Border" />
-                                          <SiGit className = "Fancy-Border" />
-                                          <SiTailwindcss className = "Fancy-Border" />
-                                          <SiBootstrap className = "Fancy-Border" />
+                                          <div className = "Skill"> <SiAmazonaws className = "Fancy-Border" /> AWS </div>
+                                          <div className = "Skill"> <SiNodedotjs className = "Fancy-Border" /> Node.js </div>
+                                          <div className = "Skill"> <SiFirebase className = "Fancy-Border" /> Firebase </div>
+                                          <div className = "Skill"> <DiSqllite className = "Fancy-Border" /> SQLite</div>
+                                          <div className = "Skill"> <SiGit className = "Fancy-Border" /> Git </div>
+                                          <div className = "Skill"> <SiTailwindcss className = "Fancy-Border" /> Tailwind </div>
+                                          <div className = "Skill"> <SiBootstrap className = "Fancy-Border" /> Bootstrap </div>
                                    
                                    </div>
                                    
@@ -167,6 +167,8 @@ export default class App extends React.Component {
                         </div>
               
                         <div className = "Projects">
+
+                            <div className = "Board-Header Projects-Header">Projects</div>
 
                             <div className = "Row">
 
@@ -218,8 +220,7 @@ export default class App extends React.Component {
 
                             </div>
 
-                            <div className = "Row">
-
+                            {/* <div className = "Row">
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Chess AI"
@@ -227,7 +228,6 @@ export default class App extends React.Component {
                                             repo = "https://github.com/aryan-cs/chess-cracker"
                                             src = "https://aryan-cs.github.io/chess-cracker/"
                                             desc = "Work In Progress: Chess algorithm using the Minimax Algorithm & Alpha-Beta pruning"/>
-
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Chrome Dino AI"
@@ -235,15 +235,13 @@ export default class App extends React.Component {
                                             repo = "https://github.com/aryan-cs/chrome-dino"
                                             src = "https://aryan-cs.github.io/chrome-dino/"
                                             desc = "My First AI project! A handmade AI system that generates pseudo-random numbers & learns the perfect jumping range based on dino speed & distance"/>
-
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "White Point"
                                             repo = "https://github.com/aryan-cs/white-point"
                                             src = "https://aryan-cs.github.io/white-point/"
                                             desc = "My first web game!"/>
-
-                            </div>
+                            </div> */}
 
                             
                             

@@ -33,7 +33,7 @@
   #welcome {
 
     height: 19vh;
-    font-size: 130%;
+    font-size: 120%;
 
   }
 
@@ -74,10 +74,11 @@
   align-items: center;
   transform: translateZ(20px);
   width: 100%;
-  margin-top: 2.5vh;
-  margin-bottom: 2vh;
+  margin-top: 1vh;
 
 }
+
+.Skill { text-align: center; font-size: 1.8vh; }
 
 .Skills {
 

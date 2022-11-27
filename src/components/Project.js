@@ -8,7 +8,7 @@ function Project (props) {
 
     <div className = "Project"
          id = {props.id}
-         onClick = {()=> { window.open(props.repo, "_blank") }}>
+         onClick = {()=> { window.open(props.src, "_blank") }}>
 
       <iframe className = "Project-iframe"
              src = { props.src }
@@ -23,7 +23,7 @@ function Project (props) {
 
       </div>
 
-      <BsGithub />
+      <BsGithub onClick = {()=> { window.open(props.repo, "_blank") }}/>
 
     </div>
 
