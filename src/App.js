@@ -32,6 +32,7 @@ export default class App extends React.Component {
               
                  <div className = "App" onLoad = {() => {
 
+                     document.getElementById("toggle").checked = true;
                      document.querySelector(":root").addEventListener("wheel", function (e) { document.querySelector(":root").scrollBy(e.deltaY, 0); });
 
                  }}>
@@ -42,7 +43,7 @@ export default class App extends React.Component {
                             height = "18vh"
                             id = "welcome"
                             header = "Welcome!"
-                            text = { <> My name is <small>Aryan Gupta</small> 🍌 </> } />
+                            text = { <> My name is <small>Aryan Gupta</small> </> } />
 
                      <ContactBoard />
        
@@ -53,6 +54,7 @@ export default class App extends React.Component {
                         <Board width = "40vh"
                                height = "76vh"
                                header = "About Me"
+                               id = "about"
                                text = {<>
                                
                                    &#8195;Hi there! My name is <span>Aryan</span>, and I'm currently a junior at James B. Conant 
@@ -67,7 +69,12 @@ export default class App extends React.Component {
                                    <br/><br/>
                                    
                                    &#8195;I'm also interested in <small>quantum computing</small>, and its applications in
-                                   <span> cryptography</span> & <small>quantum physics</small>.
+                                   <span> cryptography</span> & <small> physics</small>.
+
+                                   <br/><br/>
+
+                                   &#8195;I'm currently woring on a research project working
+                                   with <span>aerodynamics</span> and <small>flight efficiency</small>!
 
                                </>} />
        
@@ -82,7 +89,7 @@ export default class App extends React.Component {
                                       header = "I'm a..."
                                       text = {<>
                                       
-                                          Varsity <small>cross country </small> & <span>track</span> runner, <br />
+                                          <small>Cross country </small> & <span>track</span> runner, <br />
                                           Instructor at Conant's <small>CompSciKids</small>, <br />
                                           Teacher at <span>Mathnasium</span>, <br />
                                           <small>3rd degree</small> black belt holder, <br />
@@ -189,14 +196,15 @@ export default class App extends React.Component {
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Uno-Dos"
-                                            id = "noSite"
+                                          //   id = "noSite"
                                             repo = "https://github.com/aryan-cs/uno-dos"
-                                            src = ""
+                                            src = "https://aryan-cs.github.io/uno-dos/"
                                             desc = "An interactive handwritten digit detection AI!"/>
 
                                    <Project width = "30vh"
                                             height = "20vh"
                                             title = "Sudoku Solver"
+                                          //   id = "noSite"
                                             repo = "https://github.com/aryan-cs/sudoku"
                                             src = "https://aryan-cs.github.io/sudoku/"
                                             desc = "Entropy-based vs. brute force solving methods for sudoku"/>
@@ -221,6 +229,7 @@ export default class App extends React.Component {
 
                                    <Project width = "30vh"
                                             height = "20vh"
+                                          //   id = "noSite"
                                             title = "Rube Goldberg Machine"
                                             repo = "https://github.com/aryan-cs/my-goldberg"
                                             src = "https://aryan-cs.github.io/my-goldberg/"

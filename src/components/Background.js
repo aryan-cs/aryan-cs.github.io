@@ -1,3 +1,4 @@
+import p5 from "p5";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 import "./Background.css";
 
@@ -137,8 +138,14 @@ function sketch (p5) {
 
 	p5.draw = () => {
 
-	  	p5.background(BACKGROUND_COLOR);
-  		bodies.forEach(body => { body.update(); body.render(); });
+		if (document.getElementById("toggle").checked) {
+			
+			p5.background(BACKGROUND_COLOR);
+  			bodies.forEach(body => { body.update(); body.render(); });
+		
+		}
+
+		else { p5.background(BACKGROUND_COLOR); }
 		
 	};
 
@@ -158,4 +165,24 @@ function sketch (p5) {
 
 }
 
-export default function Background () { return <ReactP5Wrapper sketch = {sketch}/>; }
+export default function Background () {
+
+	return (<>
+	
+		<div>
+
+  			<label className = "switch">
+
+    			<input type = "checkbox"
+					   id = "toggle" />
+    			<div className = "slider" />
+
+  			</label>
+
+		</div>
+
+		<ReactP5Wrapper sketch = {sketch} />
+	
+	</>);
+	
+}

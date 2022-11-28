@@ -21,6 +21,8 @@
 
 }
 
+#about { font-size: 1.95vh; }
+
 @media screen and (max-width: 1000px) {
 
   .Board {
