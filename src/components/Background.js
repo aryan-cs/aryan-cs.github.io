@@ -1,3 +1,4 @@
+import p5 from "p5";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 import "./Background.css";
 
@@ -31,8 +32,8 @@ function sketch (p5) {
     
 		this.pos = p5.createVector(x, y, z);
 		this.vel =  p5.createVector(0, 0, 0);	
-		this.speed = 150;
-		this.size = Math.min(window.innerHeight, window.innerWidth) / 75;
+		this.speed = 300;
+		this.size = Math.min(window.innerHeight, window.innerWidth) / 50;
 		this.angularVel =  p5.random(0.005, 0.025);
 		this.color = PRESET_COLORS[p5.floor(p5.random(0, PRESET_COLORS.length))];
 	
@@ -116,7 +117,7 @@ function sketch (p5) {
 		
 		p5.createCanvas(window.innerWidth, window.innerHeight,  p5.WEBGL);
 
-  		for (var b = 0; b < window.innerWidth / 150; b++) {
+  		for (var b = 0; b < window.innerWidth / 190; b++) {
     
     		bodies.push(new Body(p5.random(-window.innerWidth, window.innerWidth),
 								 p5.random(-window.innerHeight, window.innerHeight),
@@ -137,8 +138,14 @@ function sketch (p5) {
 
 	p5.draw = () => {
 
-	  	p5.background(BACKGROUND_COLOR);
-  		bodies.forEach(body => { body.update(); body.render(); });
+		if (document.getElementById("toggle").checked) {
+			
+			p5.background(BACKGROUND_COLOR);
+  			bodies.forEach(body => { body.update(); body.render(); });
+		
+		}
+
+		else { p5.background(BACKGROUND_COLOR); }
 		
 	};
 
@@ -149,7 +156,7 @@ function sketch (p5) {
 			let pushy = p5.createVector(p5.mouseX - (window.innerWidth / 2), p5.mouseY - (window.innerHeight / 2), UNIVERSAL_Z);
 			pushy.sub(body.pos);
 			pushy.normalize();
-			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -15);
+			pushy.mult(Math.min(window.innerHeight, window.innerWidth) / -10);
 			body.vel.add(pushy);
 			
 		});
@@ -158,4 +165,24 @@ function sketch (p5) {
 
 }
 
-export default function Background () { return <ReactP5Wrapper sketch = {sketch}/>; }
+export default function Background () {
+
+	return (<>
+	
+		<div>
+
+  			<label className = "switch">
+
+    			<input type = "checkbox"
+					   id = "toggle" />
+    			<div className = "slider" />
+
+  			</label>
+
+		</div>
+
+		<ReactP5Wrapper sketch = {sketch} />
+	
+	</>);
+	
+}

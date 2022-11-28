@@ -19,7 +19,9 @@
 :root {
 
   --background-color: #0e0e0e;
-  --scrollbar-dimensions: 7px;
+  --toggle-on: #00B8EE;
+  --toggle-off: #3e3e3e;
+  --scrollbar-dimensions: 12px;
   --translucent: rgba(35, 35, 35, 0.5);
   --color-1: #ff146e; /* porsche's rubystar red */
   --color-2: #00B8EE; /* mclaren's curacao blue */
