@@ -1,41 +1,86 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./App.css";
-import Board from "./components/Board";
-import ContactBoard from "./components/ContactBoard";
-import Project from "./components/Project";
-import {
-       
-       SiTailwindcss,
-       SiBootstrap,
-       SiPython,
-       SiJava,
-       SiCplusplus,
-       SiFirebase,
-       SiReact,
-       SiNodedotjs,
-       SiGit,
-       SiAmazonaws,
-       SiTensorflow
 
-} from "react-icons/si";
+import Text from "./components/Text";
 
-import { IoLogoJavascript } from "react-icons/io";
-import { DiSqllite } from "react-icons/di";
-import { TbCSharp } from "react-icons/tb";
-import { BiLink } from "react-icons/bi";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-export default class App extends React.Component {
+function App () {
 
-       render () {
+       const [index, setIndex] = useState(0);
+       const [indicator, setIndicator] = useState("-");
 
-              return (
+       useEffect(() => {
+
+              const INDICATION = ["-", "\\", "|", "/"];
+
+              setTimeout(() => {
+
+                     setIndicator(INDICATION[(index) % INDICATION.length]);
+                     setIndex(index + 1);
+
+              }, 200);
+
+       }, [index]);
+
+       return (
+
+              <>
               
                      <div className = "App">
 
+                            <Text text = {indicator + " Aryan Gupta " + indicator} size = "large"/>
+
+                            <div className = "links">
+
+                                   <Link activeClass = "active"
+                                          to = "about"
+                                          spy = {true}
+                                          smooth = {true}
+                                          offset = {-70}
+                                          duration = {500}>
+
+                                          <Text text = {"About"} size = "medium"/>
+
+                                   </Link>
+
+                                   <Link activeClass = "active"
+                                          to = "projects"
+                                          spy = {true}
+                                          smooth = {true}
+                                          offset = {-70}
+                                          duration = {1000}>
+
+                                          <Text text = {"Projects"} size = "medium"/>
+
+                                   </Link>
+
+                                   <Link activeClass = "active"
+                                          to = "contact"
+                                          spy = {true}
+                                          smooth = {true}
+                                          offset = {-70}
+                                          duration = {1500}>
+
+                                          <Text text = {"Contact"} size = "medium"/>
+
+                                   </Link>
+
+                            </div>
+
                      </div>
 
-              );
+                     <About/>
+                     <Projects/>
+                     <Contact/>
 
-       }
+              </>
+
+       );
 
 }
+
+export default App;

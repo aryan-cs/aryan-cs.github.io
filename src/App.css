@@ -1,5 +1,30 @@
 .App {
 
-  
+    color: white;
+    font-family: var(--font-family);
+    font-size: 3vh;
+    margin: 0 5vh;
+    height: 100vh;
+
+}
+
+.links {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0vh;
+
+}
+
+a { width: fit-content; }
+
+a .hero { transition: all 0.2s ease-in-out; }
+
+a:hover .hero {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
 
 }
