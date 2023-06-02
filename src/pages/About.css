@@ -4,8 +4,35 @@
     font-family: var(--font-family);
     font-size: 3vh;
     margin: 0 5vh;
-    height: 100vh;
+    min-height: 100vh;
     
-    /* background-color: blue; */
+}
+
+.section { width: fit-content; }
+
+.section .hero { transition: all 0.2s ease-in-out; }
+
+.section:hover .hero {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.container { margin: 4vh 0; }
+
+p {
+
+    font-size: 2vh;
+    margin: 0 0 1vh 2vw;
+
+}
+
+.description {
+
+    font-size: 2vh;
+    margin: 0 0 1vh 2vw;
+    width: 60vw;
 
 }

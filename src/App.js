@@ -29,6 +29,10 @@ function App () {
        return (
 
               <>
+
+                     <video autoPlay muted loop id = "myVideo">
+                            <source src = "./assets/videos/background.mp4" type = "video/mp4"/>
+                     </video>
               
                      <div className = "App">
 
