@@ -11,8 +11,8 @@
 }
 
 .large { font-size: clamp(20px, 10vh, 100px); }
-.medium { font-size: clamp(20px, 3.5vh, 80px); }
-.small { font-size: clamp(5px, 2vh, 40px); }
+.medium { font-size: clamp(20px, 6vh, 80px); }
+.small { font-size: clamp(5px, 3vh, 40px); }
   
 .layers { position: relative; }
   

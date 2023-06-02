@@ -40,10 +40,9 @@ function App () {
                                           to = "about"
                                           spy = {true}
                                           smooth = {true}
-                                          offset = {-70}
                                           duration = {500}>
 
-                                          <Text text = {"About"} size = "medium"/>
+                                          <Text text = {"About"} size = "small"/>
 
                                    </Link>
 
@@ -51,10 +50,9 @@ function App () {
                                           to = "projects"
                                           spy = {true}
                                           smooth = {true}
-                                          offset = {-70}
                                           duration = {1000}>
 
-                                          <Text text = {"Projects"} size = "medium"/>
+                                          <Text text = {"Projects"} size = "small"/>
 
                                    </Link>
 
@@ -62,10 +60,9 @@ function App () {
                                           to = "contact"
                                           spy = {true}
                                           smooth = {true}
-                                          offset = {-70}
                                           duration = {1500}>
 
-                                          <Text text = {"Contact"} size = "medium"/>
+                                          <Text text = {"Contact"} size = "small"/>
 
                                    </Link>
 

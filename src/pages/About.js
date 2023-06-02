@@ -8,7 +8,7 @@ function About () {
 
         <div className = "About" id = "about">
 
-            <Text text = {"About"} size = "large"/>
+            <Text text = {"About"} size = "medium"/>
 
         </div>
 

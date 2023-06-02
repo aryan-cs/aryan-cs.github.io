@@ -8,7 +8,7 @@ function Projects () {
 
         <div className = "Projects" id = "projects">
 
-            <Text text = {"Projects"} size = "large"/>
+            <Text text = {"Projects"} size = "medium"/>
 
         </div>
 
