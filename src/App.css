@@ -1,44 +1,5 @@
 .App {
 
-  height: 80vh;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-
-  float: left;
-  display: flex;
-  flex-direction: row;
-
-  overscroll-behavior-inline: contain;
-  margin-bottom: 10vh;
-  padding-right: 100vw;
-
-}
-
-.Vertical-Set { display: flex; flex-direction: column; max-height: 80vw; }
-.Horizontal-Set { display: flex; flex-direction: row; }
-
-span {
-
-  font-weight: 500;
-  color: white;
-  font-size: 105%;
-  letter-spacing: 0.01em;
-  text-shadow: 0 0 10px black;
-
-  background: linear-gradient(to bottom, transparent 50%, #36c7f390 50%);
-
-}
-
-small {
-
-  font-weight: 500;
-  color: white;
-  font-size: 105%;
-  letter-spacing: 0.01em;
-  text-shadow: 0 0 10px black;
-
-  background: linear-gradient(to bottom, transparent 50%, #f93b678e 50%);
+  
 
 }

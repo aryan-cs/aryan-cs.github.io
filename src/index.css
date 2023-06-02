@@ -1,81 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
 
-  font-family: Poppins;
-  src: url(./fonts/Poppins.ttf);
   
-}
-
-@font-face {
-
-  font-family: Barlow;
-  src: url(./fonts/Barlow.ttf);
-
+  
 }
 
 :root {
 
-  --background-color: #0e0e0e;
-  --toggle-on: #00B8EE;
-  --toggle-off: #3e3e3e;
-  --scrollbar-dimensions: 12px;
-  --translucent: rgba(35, 35, 35, 0.5);
-  --color-1: #ff146e; /* porsche's rubystar red */
-  --color-2: #00B8EE; /* mclaren's curacao blue */
-
-}
-
-::-webkit-scrollbar {
-
-  width: var(--scrollbar-dimensions);
-  height: var(--scrollbar-dimensions);
-
-}
-
-::-webkit-scrollbar-track {
-
-  background: var(--background-color);
-
-}
-
-::-webkit-scrollbar-thumb {
-
-  background: var(--translucent);
-  border-radius: var(--scrollbar-dimensions);
-
-}
-
-body {
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* overflow-y: hidden; */
-  overflow-x: scroll;
-  overscroll-behavior-inline: contain;
-  background-color: var(--background-color);
-
-}
-
-.Fancy-Border {
-
-  background: linear-gradient(rgb(45, 45, 45), rgb(45, 45, 45)) padding-box,
-              linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff) border-box;
-
-  border: 4px solid transparent;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-
-}
-
-.Fancy-Border:hover:enabled {
-
-  scale: 1.1;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
-
+  
 }
