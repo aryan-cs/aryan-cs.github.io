@@ -13,6 +13,9 @@ html, body, #root {
   
 }
 
+a { color: rgb(255, 208, 54); }
+p1 { color: rgb(255, 208, 54); }
+
 ::-webkit-scrollbar { width: 8px; }
   
 ::-webkit-scrollbar-track {

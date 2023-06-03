@@ -6,6 +6,33 @@
     margin: 0 5vh;
     min-height: 100vh;
 
-    /* background-color: red; */
+}
+
+.section { width: fit-content; }
+
+.section .hero { transition: all 0.2s ease-in-out; }
+
+.section:hover .hero {
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+.container { margin: 4vh 0; }
+
+p {
+
+    font-size: 2vh;
+    margin: 0 0 1vh 2vw;
+
+}
+
+.description {
+
+    font-size: 2vh;
+    margin: 0 0 1vh 2vw;
+    width: 60vw;
 
 }
