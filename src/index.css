@@ -3,6 +3,7 @@
 :root {
 
     --font-family: 'IBM Plex Mono', monospace;
+    --accent: rgb(255, 208, 54);
   
 }
 
@@ -13,8 +14,7 @@ html, body, #root {
   
 }
 
-a { color: rgb(255, 208, 54); }
-p1 { color: rgb(255, 208, 54); }
+a, p1 { color: var(--accent); }
 
 ::-webkit-scrollbar { width: 8px; }
   

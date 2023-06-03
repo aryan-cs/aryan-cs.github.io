@@ -85,6 +85,16 @@ function Projects () {
 
                 </div>
 
+                <div className = "container">
+
+                    <div className = "section">
+
+                        <p> See more on my <a href = "https://github.com/aryan-cs" target = "_blank" rel = "noreferrer">Github</a> </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

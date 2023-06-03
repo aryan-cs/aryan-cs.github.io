@@ -6,6 +6,11 @@
     margin: 0 5vh;
     min-height: 100vh;
     
-    /* background-color: green; */
+}
+
+.fakeLink {
+
+    text-decoration: underline;
+    cursor: pointer;
 
 }

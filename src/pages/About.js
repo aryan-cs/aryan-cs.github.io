@@ -42,7 +42,7 @@ function About () {
                         <p>
                             &gt; Software Development, Event & Sponsorship Management, Robotics & Circuitry, Teaching
                             <br/><br/>
-                            &gt; <a href = "https://runforwater5k.org/" target = "_blank" rel = "noreferrer">Cofounded a nonprofit organization</a> to raise money in support for remote villages around the world, successfully raising <p1>over $7,000</p1>
+                            &gt; Cofounded <a href = "https://runforwater5k.org/" target = "_blank" rel = "noreferrer">Run for Water</a>, a nonprofit organization dedicated to raising money in support for remote villages around the world -- successfully raised <p1>over $7,000</p1>
                             <br/><br/>
                             &gt; Taught students with learning disabilities both <p1>math and science</p1> and how to code
                             <br/><br/>
