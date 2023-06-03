@@ -7,11 +7,22 @@
   
 }
 
-html, body, #root {
+html {
 
-    background-color: black;
-    overflow-x: hidden;    
+    background-image: url('https://kaisermann.me/assets/images/effect-artifacts.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
   
+}
+
+body {
+
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+
 }
 
 a, p1 { color: var(--accent); }
@@ -19,13 +30,13 @@ a, p1 { color: var(--accent); }
 ::-webkit-scrollbar { width: 8px; }
   
 ::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.025); 
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 1); 
+    /* border-radius: 10px; */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.05); 
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.08); }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
