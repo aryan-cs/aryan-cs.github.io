@@ -8,14 +8,18 @@
 
 }
 
-video {
+.logo {
 
     position: fixed;
-    bottom: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    right: 2vh;
+    bottom: -7vh;
+
+}
+
+.icon {
+
+    width: 7vh;
+    height: 7vh;
 
 }
 

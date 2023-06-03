@@ -29,10 +29,6 @@ function App () {
        return (
 
               <>
-
-                     <video autoPlay muted loop id = "myVideo">
-                            <source src = "./assets/videos/background.mp4" type = "video/mp4"/>
-                     </video>
               
                      <div className = "App">
 
@@ -72,7 +68,15 @@ function App () {
 
                             </div>
 
-                     </div>
+                            <div className = "logo">
+
+                                   <Text text = {<img src = {require("./assets/images/icon.png")} className = "icon" alt = ""/>} size = "large"/>
+                      
+                            </div>
+                            
+                            {/* <img src = {require("./assets/images/icon.png")} alt = "owienfl" className = "icon"/> */}
+
+                     </div>      
 
                      <About/>
                      <Projects/>
