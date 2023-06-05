@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@200&family=Syne:wght@800&display=swap');
+
 :root {
 
-    --font-family: 'IBM Plex Mono', monospace;
+    --thick: 'Archivo Black', sans-serif;
+    --text: 'Inter', sans-serif;
+    --wide: 'Syne', sans-serif;
+
     --accent: rgb(255, 208, 54);
+    --opaque1: rgba(255, 255, 255, 0.8);
+    --opaque2: rgba(255, 255, 255, 0.9);
   
 }
 
 html {
 
-    background-image: src('');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     overflow-x: hidden;
   
 }
@@ -29,7 +31,7 @@ a, p1 { color: var(--accent); }
 ::-webkit-scrollbar { width: 8px; }
   
 ::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 1); 
+    background-color: rgba(0, 0, 0, 0); 
     /* border-radius: 10px; */
 }
 
