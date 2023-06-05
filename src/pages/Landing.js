@@ -1,10 +1,10 @@
-import "./About.css";
+import "./Landing.css";
 
 function About () {
 
     return (
 
-        <div className = "About" id = "about">
+        <div className = "Landing" id = "landing">
 
 
 
