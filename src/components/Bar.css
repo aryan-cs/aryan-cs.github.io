@@ -1,0 +1,20 @@
+.Bar {
+
+    background-color: #28282884;
+    border-radius: 10vh;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 1vh 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: calc(2vw + 2vh);
+
+}

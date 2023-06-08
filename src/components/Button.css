@@ -1,0 +1,68 @@
+.Button {
+
+    font-family: var(--thick);
+    border-radius: 8vh;
+    height: 80%;
+    width: clamp(8vh, 16vw, 26vw);
+    text-align: center;
+    margin: auto 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c9c934;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+.Button:hover { background-color: rgba(156, 156, 156, 0.544); }
+
+.Button:hover .label { color: rgba(255, 255, 255, 0.782); }
+
+.Button > .active {
+
+    background-color: rgba(255, 255, 255, 0.172);
+    width: 100%;
+    height: 100%;
+    border-radius: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label {
+
+    font-size: clamp(1vh, 1.5vw, 2vw);
+    color: rgba(255, 255, 255, 0.6);
+    margin: 2vh 1vh;
+
+}
+
+.Button > .active .label { color: white; }
+
+.icon {
+
+    font-size: 3.5vh;
+    margin: 2.3vh 1vh;
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.6);
+    align-self: center;
+
+}
+
+.Button > .active .icon { color: white; }
+
+@media screen and (max-width: 1400px) {
+
+    .label { display: none; }
+
+}
+
+@media screen and (min-width: 1401px) {
+
+    .icon { display: none; }
+
+}

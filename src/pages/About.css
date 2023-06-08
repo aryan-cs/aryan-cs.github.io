@@ -4,6 +4,7 @@
     font-family: var(--font-family);
     font-size: 3vh;
     margin: 0 5vw;
+    min-width: 80vw;
     min-height: 100vh;
 
     background-color: yellow;
