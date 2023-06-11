@@ -1,6 +1,6 @@
 .Button {
 
-    font-family: var(--thick);
+    font-family: var(--title);
     border-radius: 8vh;
     height: 80%;
     width: clamp(8vh, 16vw, 26vw);

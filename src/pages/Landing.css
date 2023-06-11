@@ -32,7 +32,7 @@ p {
 
 .title {
 
-    font-family: var(--thick);
+    font-family: var(--title);
     font-size: clamp(2vw, 8vw, 30vh);
     color: white;
     line-height: 1;
