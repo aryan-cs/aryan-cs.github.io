@@ -12,7 +12,7 @@ function Bar (props) {
                 to = {props.label}
                 spy = {true}
                 smooth = {true}
-                offset = {0}
+                offset = {-75}
                 duration = {750}>
 
                 <div className = "icon">{props.icon}</div>

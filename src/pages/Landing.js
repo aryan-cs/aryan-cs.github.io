@@ -12,7 +12,7 @@ function About () {
 
             <div className = "stuff">
                 <h2 className = "title"> ARYAN GUPTA </h2>
-                <p>  </p>
+                <p> Some text here... </p>
             </div>
 
         </div>

@@ -1,11 +1,16 @@
 .Projects {
 
     color: white;
-    font-family: var(--font-family);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%,
+                                        rgba(0, 0, 0, 0.3) 100%),
+                                        url(https://images.unsplash.com/photo-1517245386807-5a7e2e5f7f4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    font-family: var(--text);
     font-size: 3vh;
-    margin: 0 5vw;
-    min-width: 80vw;
-    min-height: 100vh;
+    margin: 10vh 10vw;
+    padding: 2.5vh 2.5vw;
+    min-width: 75vw;
+    min-height: 75vh;
 
     background-color: blue;
 
