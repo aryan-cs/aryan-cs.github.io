@@ -240,7 +240,7 @@ export default class App extends React.Component {
                                             id = "noSite"
                                             title = "Integrated WebGL"
                                             repo = "https://github.com/aryan-cs/purple-bodies"
-                                            src = "https://aryan-cs.github.io/purple-bodies/"
+                                            src = ""
                                             desc = "WebGL-based program to render static bodies that move using Linear Interpolation."/>
 
                             </div>
