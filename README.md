@@ -1,3 +1,3 @@
-# aryan's website v2
+# aryan's website
 
-this is a work in progress!
+this has been remade!

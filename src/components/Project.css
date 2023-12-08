@@ -1,0 +1,121 @@
+.Projects {
+
+    scale: 0.25;
+    transform: translate(-150%, -100%);
+    margin-left: 6vh;
+
+}
+
+.Projects-Header {
+
+    text-align: center;
+    font-size: 15vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.Project {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(20px);
+    border-radius: 7vh;
+    margin-right: 12vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+.Project:not(#noSite) {
+
+    background: linear-gradient(rgb(45, 45, 45), rgb(45, 45, 45)) padding-box,
+              linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff) border-box;
+
+    border: 20px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.Project:hover { scale: 1.05; }
+
+.Project-description {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 197vh;
+    height: 100vh;
+    padding: 18vh;
+    background-color: rgba(14, 14, 14, 0.75);
+    opacity: 0;
+    z-index: 2;
+    border-radius: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+
+    font-size: 10vh;
+    font-family: Poppins;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+}
+
+.Project:hover .Project-description { opacity: 1; }
+
+.Project-iframe {
+
+    width: 197vh;
+    height: 100vh;
+    border-radius: 5vh;
+    border: none;
+    z-index: 1;
+
+}
+
+.Project-text {
+
+    font-size: 8vh;
+    font-family: Barlow;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+}
+
+.Project svg {
+
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    bottom: 6vh;
+    right: 6vh;
+    z-index: 3;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 1);
+
+
+}
+
+#noSite .Project-description { opacity: 1; }
+#noSite iframe { opacity: 0; }
+#noSite {
+
+    background: linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff)
+    
+}
+
+.Project-link { transition: 0.2s ease-in-out; }
+.Project-link:hover { color: #00c3ff; scale: 1.15; }
