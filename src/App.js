@@ -31,7 +31,7 @@ export default class App extends React.Component {
        render () {
 
               return (
-              
+                     
                  <div className = "App" onLoad = {() => {
 
                      document.getElementById("toggle").checked = true;
@@ -60,17 +60,17 @@ export default class App extends React.Component {
                                text = {<>
                                
                                    &#8195;Hi there! My name is <span>Aryan</span>, and I'm currently a senior at James B. Conant 
-                                   High school interested in computer science & physics. I'm a self-taught programmer and an avid engineer.
+                                   High school interested in computer science & engineering. I'm a self-taught programmer and an avid builder.
                                    
                                    <br/><br/>
                                    
                                    &#8195;I'm interested in <small>HCI</small> & <span>AI</span>, and their 
-                                   applications in future <small>integrated systems</small>.                                   
+                                   applications in future <small>integrated smart systems</small>.                                   
                                    
                                    <br/><br/>
                                    
-                                   &#8195;I'm also interested in <small>quantum computing</small>, and its 
-                                   applications in <span>financial modelling</span> & <small> physics</small>.
+                                   &#8195;I'm also interested in <span>electrical physics</span>, and its 
+                                   applications in <small>quantum computing</small>.
 
                                    <br/><br/>
 
@@ -87,23 +87,23 @@ export default class App extends React.Component {
               
                                <Board width = "30vh"
                                       height = "32vh"
-                                      header = "I'm a..."
+                                      header = "I used to be a..."
                                       text = {<>
                                       
-                                          <span>Research intern</span> at the <small>University of
-                                          Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings in a paper for the <small>CHI '24</small> conference. <br />
+                                          <span>research intern</span> at the <small>University of
+                                          Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings. I am the <small>youngest researcher</small> to be accepted for the conference.<br />
                                           {/* Read about it <span>here</span>. */}
 
                                           </>} />
                         
                                <Board width = "34vh"
                                       height = "32vh"
-                                      header = "I'm currently..."
+                                      header = "Currently..."
                                       text = {<>
 
-                                          researching <small>mealworms</small> for <span>plastic
-                                          decomposition</span>. Right now, I'm creating a dataset
-                                          to <small>train an algorithm</small> to categorize types of <span>plastic</span>. <br />
+                                          I'm researching <small>mealworms</small> for <span>plastic
+                                          decomposition</span>, and I'm designing a system
+                                          to <small>upcycle plastic</small> into <span>3D printing filament</span>. <br />
                                           
                                           </>} />
        
@@ -157,15 +157,15 @@ export default class App extends React.Component {
 
                                    <div className = "Timeline-Header">Related Work</div>
 
-                                   <a href = "https://github.com/aryan-cs/uno-dos"
+                                   <a href = "https://github.com/aryan-cs/hand-e"
                                       target = "_blank"
                                       rel = "noreferrer"
-                                      className = "Event">Handwritten<br /><span>Digit Detection</span><BiLink /></a>
+                                      className = "Event">OpenCV & Arduino<br /><span>Hand-E</span><BiLink /></a>
 
-                                   <a href = "https://github.com/aryan-cs/my-goldberg"
+                                   <a href = "https://github.com/aryan-cs/project-plastic"
                                       target = "_blank"
                                       rel = "noreferrer"
-                                      className = "Event">Physics-based<br /><span>Rube Goldberg Project</span><BiLink /></a>
+                                      className = "Event">Plastic Decomposition<br /><span>Project Plastic</span><BiLink /></a>
 
                                    <a href = "https://github.com/aryan-cs/red-line"
                                       target = "_blank"
@@ -238,10 +238,10 @@ export default class App extends React.Component {
                                    <Project width = "30vh"
                                             height = "20vh"
                                             id = "noSite"
-                                            title = "Integrated WebGL"
-                                            repo = "https://github.com/aryan-cs/purple-bodies"
+                                            title = "Hand-E"
+                                            repo = "https://github.com/aryan-cs/hand-e"
                                             src = ""
-                                            desc = "WebGL-based program to render static bodies that move using Linear Interpolation."/>
+                                            desc = "A system which uses OpenCV & Mediapipe for hand gesture and pose detection, relayed to an Arduino to control a robotic arm. based on Tony Stark's Dum-e!"/>
 
                             </div>
 

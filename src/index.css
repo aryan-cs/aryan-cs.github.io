@@ -61,6 +61,8 @@ body {
   overscroll-behavior-inline: contain;
   background-color: var(--background-color);
 
+  overflow-anchor: none;
+
 }
 
 .Fancy-Border {
