@@ -23,8 +23,9 @@
   --toggle-off: #3e3e3e;
   --scrollbar-dimensions: 12px;
   --translucent: rgba(35, 35, 35, 0.5);
-  --color-1: #ff146e; /* porsche's rubystar red */
-  --color-2: #00B8EE; /* mclaren's curacao blue */
+  --color-1: #34d6ff; /* porsche's rubystar red */
+  --color-15: #30afe6; /* porsche's rubystar red */
+  --color-2: #1d6693; /* mclaren's curacao blue */
 
 }
 
@@ -68,7 +69,7 @@ body {
 .Fancy-Border {
 
   background: linear-gradient(rgb(45, 45, 45), rgb(45, 45, 45)) padding-box,
-              linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff) border-box;
+              linear-gradient(120deg, var(--color-1), var(--color-15), var(--color-2)) border-box;
 
   border: 4px solid transparent;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);

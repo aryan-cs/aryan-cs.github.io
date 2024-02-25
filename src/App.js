@@ -34,7 +34,7 @@ export default class App extends React.Component {
                      
                  <div className = "App" onLoad = {() => {
 
-                     document.getElementById("toggle").checked = true;
+                     // document.getElementById("toggle").checked = true;
                      document.querySelector(":root").addEventListener("wheel", function (e) { document.querySelector(":root").scrollBy(e.deltaY / 1, 0); });
 
                  }}>
@@ -69,7 +69,7 @@ export default class App extends React.Component {
                                    
                                    <br/><br/>
                                    
-                                   &#8195;I'm also interested in <span>electrical physics</span>, and its 
+                                   &#8195;I'm also interested in <span>physics</span>, and its 
                                    applications in <small>quantum computing</small>.
 
                                    <br/><br/>
@@ -90,8 +90,7 @@ export default class App extends React.Component {
                                       header = "I used to be a..."
                                       text = {<>
                                       
-                                          <span>research intern</span> at the <small>University of
-                                          Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings. I am the <small>youngest researcher</small> to be accepted for the conference.<br />
+                                          <span>research intern</span> at the <small>University of Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings. I am the <small>youngest researcher to be accepted for the conference.</small> <br />
                                           {/* Read about it <span>here</span>. */}
 
                                           </>} />
@@ -241,7 +240,7 @@ export default class App extends React.Component {
                                             title = "Hand-E"
                                             repo = "https://github.com/aryan-cs/hand-e"
                                             src = ""
-                                            desc = "A system which uses OpenCV & Mediapipe for hand gesture and pose detection, relayed to an Arduino to control a robotic arm. based on Tony Stark's Dum-e!"/>
+                                            desc = "A system which uses OpenCV & Mediapipe for hand gesture and pose detection, relayed to an Arduino to control a robotic arm. based on Tony Stark's Dum-E!"/>
 
                             </div>
 

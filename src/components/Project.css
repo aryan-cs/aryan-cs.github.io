@@ -37,7 +37,7 @@
 .Project:not(#noSite) {
 
     background: linear-gradient(rgb(45, 45, 45), rgb(45, 45, 45)) padding-box,
-              linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff) border-box;
+              linear-gradient(120deg, var(--color-1), var(--color-15), var(--color-2)) border-box;
 
     border: 20px solid transparent;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
@@ -96,8 +96,8 @@
 
 .Project svg {
 
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     position: absolute;
     bottom: 6vh;
     right: 6vh;
@@ -113,9 +113,9 @@
 #noSite iframe { opacity: 0; }
 #noSite {
 
-    background: linear-gradient(120deg, #ff0062, #c182ff52, #00c3ff)
+    background: linear-gradient(120deg, var(--color-1), var(--color-15), var(--color-2)) border-box;
     
 }
 
 .Project-link { transition: 0.2s ease-in-out; }
-.Project-link:hover { color: #00c3ff; scale: 1.15; }
+.Project-link:hover { color: var(--color-1); scale: 1.15; }

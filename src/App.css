@@ -1,8 +1,10 @@
 .App {
 
   height: 80vh;
+  width: 100vw;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 
@@ -26,7 +28,7 @@ span {
   letter-spacing: 0.01em;
   text-shadow: 0 0 10px black;
 
-  background: linear-gradient(to bottom, transparent 50%, #36c7f390 50%);
+  background: linear-gradient(to bottom, transparent 92%, var(--color-2) 50%);
 
 }
 
@@ -38,6 +40,6 @@ small {
   letter-spacing: 0.01em;
   text-shadow: 0 0 10px black;
 
-  background: linear-gradient(to bottom, transparent 50%, #f93b678e 50%);
+  background: linear-gradient(to bottom, transparent 92%, var(--color-1) 50%);
 
 }
