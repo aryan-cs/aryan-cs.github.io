@@ -21,7 +21,7 @@ function Board (props) {
 
             </div>
 
-              <img src = { require("../images/aryan.jpg") }
+              <img src = { "https://avatars.githubusercontent.com/u/64030782?v=4" }
                    style = {{ width: "23vh" }}
                    className = "Hoverable-Image Fancy-Border"
                    draggable = "false"
