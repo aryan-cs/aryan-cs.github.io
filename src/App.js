@@ -90,8 +90,7 @@ export default class App extends React.Component {
                                       header = "I used to be a..."
                                       text = {<>
                                       
-                                          <span>research intern</span> at the <small>University of
-                                          Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings. I am the <small>youngest researcher to be accepted for the conference.</small> <br />
+                                          <span>research intern</span> at the <small>University of Chicago</small>, where I engineered <span>integrated meshes</span> and published my findings. I am the <small>youngest researcher to be accepted for the conference.</small> <br />
                                           {/* Read about it <span>here</span>. */}
 
                                           </>} />
